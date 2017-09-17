@@ -1,16 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AmChartsModule } from '@amcharts/amcharts3-angular';
+
+import { ChartService } from './chart.service';
 
 import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AmChartsModule,
   ],
-  providers: [],
+  providers: [
+    ChartService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
